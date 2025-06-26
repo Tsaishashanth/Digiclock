@@ -1,7 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-
+import React, { useState, useEffect } from 'react';
 function App() {
+  const [currentTime, setCurrentTime] = useState('');
+
+  useEffect(() => {
+    const updateClock = () => {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      setCurrentTime(timeString);
+    };
+
+    updateClock();
+    const intervalId = setInterval(updateClock, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
   return (
     <>
     <div className ="bar">
@@ -19,7 +33,13 @@ function App() {
           <h1 className= "containertext">Timer</h1>
         </div>
     </div>
-    
+    {/* time section */}
+    <div className= "linksbar">
+      <h1>Time</h1>
+    </div>
+    <div className="time-container">
+        <h1 className="time-text">{currentTime}</h1>
+      </div>
     </>
   );
 }

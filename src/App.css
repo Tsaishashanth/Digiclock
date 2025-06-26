@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+
+
+.bar{
+  display:flex;
+  width: 90%;
+  height:4rem;
+  background-color: grey;
+  margin: 0 auto;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  margin-top:1rem;
+}
+.barname {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+.about{
+  display:flex;
+  margin: 0 auto;
+  margin-top:2rem;
+  justify-content:center;
+  align-items:center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.aboutimage {
+  display:flex;
+  max-width: 20%;
+  /* margin-left: 9rem; */
+  justify-content:center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.adjust {
+  
+  margin-left: 3rem;
+  /* text-align: left; makes all text start from the same line */
+  font-family: 'Bricolage Grotesque', sans-serif;
+  width:30%;
+  text-align:center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+p{
+  max-width:50%;
+  font-size:1.5rem;
+  text-align:center;
+  margin:0 auto;
+}
+.container {
+  width: 20%;
+  height: 19rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: rem auto;
+  /* padding: 20px; */
   display: flex;
+  /* align-items: center; */
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align:left;
+  justify-content:center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containertext {
+  display:flex;
+  margin-left:4rem
 }

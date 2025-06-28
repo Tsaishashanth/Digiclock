@@ -72,6 +72,10 @@ p{
   display:flex;
   margin-left:4rem
 }
+
+.containertext:hover{
+  color:#0077b6;
+}
 /* time  */
 .linksbar{
   display:flex;
